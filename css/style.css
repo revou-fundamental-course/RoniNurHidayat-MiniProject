@@ -14,7 +14,7 @@ body {
 h1 {
     position: absolute;
     left: 50%;
-    top: 5%;
+    top: 2%;
     transform: translate(-50%);
     text-align: center;
     font-size: 50px;
@@ -29,7 +29,7 @@ h1 {
 
 .bg-header {
     position: absolute;
-    top: 5.5%;
+    top: 2.5%;
     left: 50%;
     transform: translate(-50%);
     width: 45%;
@@ -47,23 +47,23 @@ h1 {
     align-items: flex-start;
     flex-direction: column;
     position: absolute;
-    top: 20%;
+    top: 15%;
     left: 50%;
     transform: translate(-50%);
     width: 45%;
-    height: 70%;
+    height: 60%;
     background-color: rgba(225,225,225,0.25);
     box-shadow: 0 25px 25px rgba(0,0,0,0.1);
     border: 1px solid #fff;
     border-radius: 20px;
     backdrop-filter: blur(5px);
     flex-wrap: wrap;
-    padding: 1%;
+    padding: 10px;
     font-size: 20px;
 }
 
 .item {
-    margin: 10px 5px 10px 5px;
+    margin: 5px;
 }
 .awalan, .labelCelcius, .labelFahrenheit, .labelKalkulasi {
     text-align: justify;
@@ -77,7 +77,8 @@ h1 {
     font-weight: bold;
     padding: 0 10px;
     border-radius: 10px;
-    border: none;
+    outline-color: #000;
+    background-color: transparent;
 }
 main div .button {
     flex-direction: row;
@@ -92,12 +93,16 @@ main div .button {
     font-weight: bold;
     cursor: pointer;
     background-color: #000;
-    color: #05fa77;
-    text-shadow: 0 0 4px #73f1ae;
-    border: solid 2px #05fa77;
     border-radius: 8px;
     margin-right: 20px;
     transition: 0.3s;
+}
+
+.konversi {
+    color: #05fa77;
+    text-shadow: 0 0 4px #73f1ae;
+    border: solid 2px #05fa77;
+
 }
 .konversi:hover {
     color: #000;
@@ -108,4 +113,52 @@ main div .button {
     box-shadow: 0 0 10px rgba(5, 250, 119, 0.5), 0 0 40px rgba(5, 250, 119, 0.5), 0 0 80px rgba(5, 250, 119, 0.5);
 }
 
-/* konversi: hijau, reset: merah, reverse: biru */
+.reset {
+    color: #d63333;
+    text-shadow: 0 0 4px #ff0000;
+    border: solid 2px #d63333;
+}
+.reset:hover {
+    color: #000;
+    text-shadow: 0 0 0 #000;
+    background-color: #d63333;
+    border: solid 2px #d63333;
+    font-weight: bolder;
+    box-shadow: 0 0 10px rgba(214, 51, 51, 0.5), 0 0 40px rgba(214, 51, 51, 0.5), 0 0 80px rgba(214, 51, 51, 0.5);
+}
+
+.reverse {
+    color: #398bee;
+    text-shadow: 0 0 4px #2661d6;
+    border: solid 2px #398bee;
+}
+.reverse:hover {
+    color: #000;
+    text-shadow: 0 0 0 #000;
+    background-color: #398bee;
+    border: solid 2px #398bee;
+    font-weight: bolder;
+    box-shadow: 0 0 10px rgba(57, 139, 238, 0.5), 0 0 40px rgba(57, 139, 238, 0.5), 0 0 80px rgba(57, 139, 238, 0.5);
+}
+
+.konversi:active, .reset:active, .reverse:active {
+    border: solid 2px #000;
+    transform: scale(1.1);
+    transition: 0.1s;
+}
+
+.inputCelcius:focus {
+    outline-color:  rgb(11, 245, 217);
+    background-color: white;
+    box-shadow: 0 0 10px rgb(127, 255, 212);
+}
+.inputFahrenheit:focus {
+    outline-color:  rgb(11, 245, 217);
+    background-color: white;
+    box-shadow: 0 0 10px rgb(127, 255, 212);
+}
+.kalkulasi:focus {
+    outline-color:  rgb(245, 11, 11);
+    background-color: white;
+    box-shadow: 0 0 10px rgb(244, 57, 57);
+}
