@@ -51,7 +51,7 @@ h1 {
     left: 50%;
     transform: translate(-50%);
     width: 45%;
-    height: 60%;
+    height: 62%;
     background-color: rgba(225,225,225,0.25);
     box-shadow: 0 25px 25px rgba(0,0,0,0.1);
     border: 1px solid #fff;
@@ -65,19 +65,20 @@ h1 {
 .item {
     margin: 5px;
 }
-.awalan, .labelCelcius, .labelFahrenheit, .labelKalkulasi {
+.awalan, .labelCelsius, .labelFahrenheit, .labelKalkulasi {
     text-align: justify;
     font-weight: bold;
     color: #000;
 }
-.inputCelcius, .inputFahrenheit, .kalkulasi {
+.inputCelsius, .inputFahrenheit, .kalkulasi {
     width: 500px;
     height: 35px;
     font-size: 20px;
     font-weight: bold;
     padding: 0 10px;
     border-radius: 10px;
-    outline-color: #000;
+    border: solid 2px #000;
+    color: #000;
     background-color: transparent;
 }
 main div .button {
@@ -147,7 +148,7 @@ main div .button {
     transition: 0.1s;
 }
 
-.inputCelcius:focus {
+.inputCelsius:focus {
     outline-color:  rgb(11, 245, 217);
     background-color: white;
     box-shadow: 0 0 10px rgb(127, 255, 212);
@@ -156,9 +157,4 @@ main div .button {
     outline-color:  rgb(11, 245, 217);
     background-color: white;
     box-shadow: 0 0 10px rgb(127, 255, 212);
-}
-.kalkulasi:focus {
-    outline-color:  rgb(245, 11, 11);
-    background-color: white;
-    box-shadow: 0 0 10px rgb(244, 57, 57);
 }

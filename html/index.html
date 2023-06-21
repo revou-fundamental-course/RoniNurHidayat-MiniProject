@@ -5,29 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MINI PROJECT REVOU</title>
     <link rel="stylesheet" href="../css/style.css">
-    <script src="../js/script.js"></script>
     <link rel="icon" type="/image/x-icon" href="../assets/logo.jpg">
 </head>
 <body>
-<header>
-    <div class="bg-header"></div>
-    <h1>KALKULATOR SUHU</h1>
-</header>
-<main>
-    <div class="bg-main">
-        <p class="item awalan">Masukkan suhu derajat Celcius (&deg;C) ke kotak dibawah, lalu klik tombol Konversi untuk mendapatkan hasil konversi dalam bentuk Fahrenheit (&deg;F)</p>
-            <label class="item labelCelcius" for="celcius">Celcius (&deg;C):</label>
-            <input class="item inputCelcius" type="number" name="celcius" id="celcius">
+    <header>
+        <div class="bg-header"></div>
+        <h1>KALKULATOR SUHU</h1>
+    </header>
+    <main>
+        <div class="bg-main">
+            <p class="item awalan">Masukkan suhu derajat Celsius (&deg;C) ke kotak dibawah, lalu klik tombol Konversi untuk mendapatkan hasil konversi dalam bentuk Fahrenheit (&deg;F)</p>
+            <label class="item labelCelsius" for="Celsius">Celsius (&deg;C):</label>
+            <input class="item inputCelsius" type="number" name="Celsius" id="celsius" placeholder="Masukkan input di sini">
             <div class="button">
-                <button class="item konversi">Konversi</button>
-                <button class="item reset">Reset</button>
-                <button class="item reverse">Reverse</button>
+                <button class="item konversi" id="konversi" onclick="konversi()">Konversi</button>
+                <button class="item reset" id="reset" onclick="reset();">Reset</button>
+                <button class="item reverse" id="reverse">Reverse</button>
             </div>
             <label class="item labelFahrenheit" for="Fahrenheit">Fahrenheit (&deg;F):</label>
-            <input class="item inputFahrenheit" type="number" name="Fahrenheit" id="Fahrenheit">
+            <input class="item inputFahrenheit" type="number" name="fahrenheit" id="fahrenheit" disabled="disabled">
             <label class="item labelKalkulasi" for="Kalkulasi">Cara Kalkulasi:</label>
-            <input class="item kalkulasi" type="text" id="Kalkulasi">
-    </div>
-</main>
+            <input class="item kalkulasi" type="text" id="kalkulasi" disabled="disabled">
+        </div>
+    </main>
+    <script src="../js/script.js"></script>
 </body>
 </html>
