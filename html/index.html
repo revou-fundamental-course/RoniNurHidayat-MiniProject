@@ -16,16 +16,16 @@
         <div class="bg-main">
             <p class="item awalan">Masukkan suhu derajat Celsius (&deg;C) ke kotak dibawah, lalu klik tombol Konversi untuk mendapatkan hasil konversi dalam bentuk Fahrenheit (&deg;F)</p>
             <label class="item labelCelsius" for="Celsius">Celsius (&deg;C):</label>
-            <input class="item inputCelsius" type="number" name="Celsius" id="celsius" placeholder="Masukkan input di sini">
+            <input class="item inputCelsius" type="number" name="Celsius" id="celsius">
             <div class="button">
                 <button class="item konversi" id="konversi" onclick="konversi()">Konversi</button>
-                <button class="item reset" id="reset" onclick="reset();">Reset</button>
-                <button class="item reverse" id="reverse">Reverse</button>
+                <button class="item reset" id="reset" onclick="reset()">Reset</button>
+                <button class="item reverse" id="reverse" onclick="reverse()">Reverse</button>
             </div>
             <label class="item labelFahrenheit" for="Fahrenheit">Fahrenheit (&deg;F):</label>
-            <input class="item inputFahrenheit" type="number" name="fahrenheit" id="fahrenheit" disabled="disabled">
+            <input class="item inputFahrenheit" type="number" name="fahrenheit" id="fahrenheit" disabled>
             <label class="item labelKalkulasi" for="Kalkulasi">Cara Kalkulasi:</label>
-            <input class="item kalkulasi" type="text" id="kalkulasi" disabled="disabled">
+            <input class="item kalkulasi" type="text" id="kalkulasi" disabled>
         </div>
         <a href="#explanation">EXPLANATION</a>
         <div class="overlayExplanation" id="explanation">
