@@ -1,49 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MINI PROJECT REVOU</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" type="/image/x-icon" href="../assets/logo.jpg">
-</head>
-<body>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" type="/image/x-icon" href="../assets/logo.jpg" />
+  </head>
+  <body>
     <header>
-        <div class="bg-header"></div>
-        <h1>KALKULATOR SUHU</h1>
+      <div class="bg-header"></div>
+      <h1>KALKULATOR SUHU</h1>
     </header>
     <main>
-        <div class="bg-main">
-            <p class="item awalan">Masukkan suhu derajat Celsius (&deg;C) ke kotak dibawah, lalu klik tombol Konversi untuk mendapatkan hasil konversi dalam bentuk Fahrenheit (&deg;F)</p>
-            <label class="item labelCelsius" for="Celsius">Celsius (&deg;C):</label>
-            <input class="item inputCelsius" type="number" name="Celsius" id="celsius">
-            <div class="button">
-                <button class="item konversi" id="konversi" onclick="konversi()">Konversi</button>
-                <button class="item reset" id="reset" onclick="reset()">Reset</button>
-                <button class="item reverse" id="reverse" onclick="reverse()">Reverse</button>
-            </div>
-            <label class="item labelFahrenheit" for="Fahrenheit">Fahrenheit (&deg;F):</label>
-            <input class="item inputFahrenheit" type="number" name="fahrenheit" id="fahrenheit" disabled>
-            <label class="item labelKalkulasi" for="Kalkulasi">Cara Kalkulasi:</label>
-            <input class="item kalkulasi" type="text" id="kalkulasi" disabled>
+      <div class="bg-main">
+        <p class="item awalan">
+          Masukkan suhu derajat Celsius (&deg;C) ke kotak dibawah, lalu klik
+          tombol Konversi untuk mendapatkan hasil konversi dalam bentuk
+          Fahrenheit (&deg;F)
+        </p>
+        <label class="item labelCelsius" for="Celsius">Celsius (&deg;C):</label>
+        <input
+          class="item inputCelsius"
+          type="number"
+          name="Celsius"
+          id="celsius"
+        />
+        <div class="button">
+          <button class="item konversi" id="konversi" onclick="konversi()">
+            Konversi
+          </button>
+          <button class="item reset" id="reset" onclick="reset()">Reset</button>
+          <button class="item reverse" id="reverse" onclick="reverse()">
+            Reverse
+          </button>
         </div>
-        <a href="#explanation">EXPLANATION</a>
-        <div class="overlayExplanation" id="explanation">
-            <a href="#" class="close">CLOSE</a>
-                <div class="ckef">
-                    <p class="judulX"><B>Cara Konversi dari Celsius (&deg;C) ke Fahrenheit (&deg;F)</B></p> <br>
-                    <p class="isiX">Suhu <I><B>S</B></I> dalam derajat Fahrenheit (&deg;F) sama dengan suhu <I><B>S</B></I> dalam derajat Celsius (&deg;C) kali 9/5, tambah 32.</p> <br>
-                    <p class="rumus1"><I><B>S</B></I><sub>(&deg;F)</sub> = (<I><B>S</B></I><SUB>(&deg;C)</SUB> &#215; 9/5) + 32</p> <br>
-                    <P class="atau">atau</P> <br>
-                    <p class="rumus2"><I><B>S</B></I><sub>(&deg;F)</sub> = (<I><B>S</B></I><SUB>(&deg;C)</SUB> &#215; 1.8) + 32</p>
-                </div>
-                <div class="fkec">
-                    <p class="judulX"><B>Cara Konversi dari Fahrenheit (&deg;F) ke Celsius (&deg;C)</B></p> <br>
-                    <p class="isiX">Suhu <I><B>S</B></I> dalam derajat Celsius (&deg;C) sama dengan suhu <I><B>S</B></I> dalam derajat Fahrenheit (&deg;F) dikurang 32, kali 5/9.</p> <br> <br> <br>
-                    <p class="rumus1"><I><B>S</B></I><sub>(&deg;C)</sub> = (<I><B>S</B></I><SUB>(&deg;F)</SUB> - 32) &#215; 5/9</p>
-                </div>
+        <label class="item labelFahrenheit" for="Fahrenheit"
+          >Fahrenheit (&deg;F):</label
+        >
+        <input
+          class="item inputFahrenheit"
+          type="number"
+          name="fahrenheit"
+          id="fahrenheit"
+          disabled
+        />
+        <label class="item labelKalkulasi" for="Kalkulasi"
+          >Cara Kalkulasi:</label
+        >
+        <input class="item kalkulasi" type="text" id="kalkulasi" disabled />
+      </div>
+      <a href="#explanation">EXPLANATION</a>
+      <div class="overlayExplanation" id="explanation">
+        <a href="#" class="close">CLOSE</a>
+        <div class="ckef">
+          <p class="judulX">
+            <b>Cara Konversi dari Celsius (&deg;C) ke Fahrenheit (&deg;F)</b>
+          </p>
+          <br />
+          <p class="isiX">
+            Suhu <i><b>S</b></i> dalam derajat Fahrenheit (&deg;F) sama dengan
+            suhu <i><b>S</b></i> dalam derajat Celsius (&deg;C) kali 9/5, tambah
+            32.
+          </p>
+          <br />
+          <p class="rumus1">
+            <i><b>S</b></i
+            ><sub>(&deg;F)</sub> = (<i><b>S</b></i
+            ><sub>(&deg;C)</sub> &#215; 9/5) + 32
+          </p>
+          <br />
+          <p class="atau">atau</p>
+          <br />
+          <p class="rumus2">
+            <i><b>S</b></i
+            ><sub>(&deg;F)</sub> = (<i><b>S</b></i
+            ><sub>(&deg;C)</sub> &#215; 1.8) + 32
+          </p>
         </div>
+        <div class="fkec">
+          <p class="judulX">
+            <b>Cara Konversi dari Fahrenheit (&deg;F) ke Celsius (&deg;C)</b>
+          </p>
+          <br />
+          <p class="isiX">
+            Suhu <i><b>S</b></i> dalam derajat Celsius (&deg;C) sama dengan suhu
+            <i><b>S</b></i> dalam derajat Fahrenheit (&deg;F) dikurang 32, kali
+            5/9.
+          </p>
+          <br />
+          <br />
+          <br />
+          <p class="rumus1">
+            <i><b>S</b></i
+            ><sub>(&deg;C)</sub> = (<i><b>S</b></i
+            ><sub>(&deg;F)</sub> - 32) &#215; 5/9
+          </p>
+        </div>
+      </div>
     </main>
+    <footer>
+      <p>
+        Created by <span><b>Roni Nur Hidayat</b></span>
+      </p>
+      <div id="footer1">
+        <img src="../assets/roni.png" alt="logo footer" id="logo" />
+      </div>
+      <div id="footer2">
+        <img src="../assets/revou.png" alt="logo revou" id="revou" />
+      </div>
+    </footer>
     <script src="../js/script.js"></script>
-</body>
+  </body>
 </html>

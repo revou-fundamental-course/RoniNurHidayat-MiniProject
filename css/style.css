@@ -11,6 +11,20 @@ body {
     background-size: cover;
 }
 
+
+/* HEADER */
+.bg-header {
+    position: absolute;
+    top: 2.5%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 45%;
+    height: 10%;
+    border-radius: 14px;
+    box-shadow:  8px 8px 10px #815422, -8px -8px 10px #505e83;
+    z-index: -1;
+    background-color: rgba(225,225,225,0.25);
+}
 h1 {
     position: absolute;
     left: 50%;
@@ -27,20 +41,8 @@ h1 {
     -webkit-text-stroke: 2px black;
 }
 
-.bg-header {
-    position: absolute;
-    top: 2.5%;
-    left: 50%;
-    transform: translate(-50%);
-    width: 45%;
-    height: 10%;
-    border-radius: 14px;
-    box-shadow:  8px 8px 10px #815422, -8px -8px 10px #505e83;
-    z-index: -1;
-    background-color: rgba(225,225,225,0.25);
-}
 
-
+/* MAIN */
 .bg-main {
     display: flex;
     justify-content: center;
@@ -150,15 +152,8 @@ main div .button {
 
 .inputCelsius:focus {
     outline-color:  rgb(11, 245, 217);
-    /* background-color: white; */
     box-shadow: 0 0 10px rgb(127, 255, 212);
 }
-/* .inputFahrenheit:focus {
-    outline-color:  rgb(11, 245, 217);
-    background-color: white;
-    box-shadow: 0 0 10px rgb(127, 255, 212);
-} */
-
 
 a {
     position: absolute;
@@ -245,4 +240,63 @@ a {
     border: solid 2px black;
     border-radius: 10px;
     padding: 15px;
+}
+
+
+/* FOOTER */
+footer p {
+    position: absolute;
+    bottom: 13%;
+    left: 1.5%;
+    font-size: 15px;
+    color: #fff; 
+    font-style: italic;
+    font-weight: bold;  
+}
+footer p span {
+    color: yellow;
+    font-style: normal;
+}
+
+footer #footer1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    background-color: #fff;
+    border: solid 1px black;
+    border-radius: 50px;
+    bottom: 2%;
+    left: 1%;
+    width: 4.8%;
+    height: 10%;
+}
+#logo {
+    height: auto; 
+    width: auto; 
+    max-width: 60px; 
+    max-height: 60px;
+}
+
+footer #footer2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    bottom: 3%;
+    left: 7%;
+    background-color: #fff;
+    border: solid 1px black;
+    border-radius: 10px;
+    height: 8%;
+    width: 10%;
+}
+#revou {
+    height: auto;
+    width: auto;
+    max-height: 57.2px;
+    max-width: 116.8px;
+    
 }

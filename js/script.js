@@ -1,3 +1,4 @@
+// script untuk button konversi
 function konversi(){
     var celsius = document.getElementById('celsius').value;
     var fahrenheit = document.getElementById('fahrenheit').value;
@@ -38,6 +39,8 @@ function konversi(){
     document.getElementById('celsius').value = celsius;
 }
 
+
+// script untuk button reset
 function reset(){
     document.getElementById('fahrenheit').value = '';
     document.getElementById('celsius').value = '';
@@ -56,6 +59,8 @@ function reset(){
     cara.style.boxShadow = 'none';
 }
 
+
+// script untuk button reverse
 function reverse(){
     let inputF = document.getElementById('fahrenheit');
     let outputC = document.getElementById('celsius');
